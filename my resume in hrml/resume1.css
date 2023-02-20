@@ -1,0 +1,674 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+	margin: 0;
+    padding: 0;
+
+
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: black;
+	color: white;
+}
+
+header{
+	/*position: sticky;
+	top: 0;
+	background-color: black;*/
+
+
+	
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	/*border: 2px solid red;
+	height: 60px;*/
+	
+}
+.nav-2 ul{
+	margin-right: 95px;
+	margin-top: 9px;
+}
+
+.nav-2 ul li{
+	float: left;
+	list-style: none;
+	margin: 25px;
+
+}
+.nav-2 ul li::before{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background-color: red;
+	left: 0px;
+	bottom: -8px;
+	display: block;
+	transition: 1s;
+}
+.nav-2 ul li:hover::before{
+	width: 100%;
+}
+
+
+.nav-1{
+	margin-left: 50px;
+}
+h2{
+	margin: 25px;
+	color: white;
+	font-size: 35px;
+	transition: 1s;
+
+}
+.nav h2:hover{
+	font-size: 40px;
+	text-shadow: 2px 2px blue;
+	margin: 22px;
+}
+span{
+	color: red;
+	font-size: 45px;
+}
+.nav-2 ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+	transition: 0.3s;
+	
+
+}
+.nav-2 ul li a:hover{
+	color: red;
+	font-size: 24px;
+}
+
+h1{
+	color: whitesmoke;
+	font-size: 40px;
+	word-spacing: 7px;
+	letter-spacing: 7px;
+	padding-bottom: 20px;
+
+}
+h4{
+	color: silver;
+	font-size: 20px;
+	word-spacing: 5px;
+	letter-spacing: 5px;
+	padding-bottom: 30px;
+}
+.section-1{
+	display: flex;
+	justify-content: space-between;
+}
+.name{
+	
+	margin-top: 180px;
+	margin-left: 100px;
+	margin-right: 30px;
+	padding: 25px 65px 0px 15px;
+	margin-bottom: 80px;
+	transition: 1s;
+	text-align: left;
+	
+
+}
+.pic{
+	margin-top: 10px;
+	margin-right: 100px;
+}
+.pic img{
+	width: 600px;
+	height: 600px;
+	border-radius: 30px;
+	transition:1s ;
+
+   
+}
+.name:hover{
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 10px black;
+	transform: scale(1.03);
+}
+.pic img:hover{
+	box-shadow: 0px 0px 6px 6px black;
+	border: 2px soid red;
+	width: 605px;
+	height: 605px ;
+	transform: scale(1.02);
+	co
+}
+
+
+
+
+/*-----------------About Me--------------------------*/
+#about{
+	padding: 60px 0px;
+	height: 85vh;
+
+}
+
+.row{
+	display: flex;
+	justify-content:space-around ;
+
+}
+.col-1{
+
+	width: 35%;
+}
+.col-1 .img1{
+	width: 100%;
+	border-radius: 5px;
+	box-shadow:  3px 3px 0px 0px gray;
+	transform:translate3d(0px, 0px, 0px) ;
+	transition: 1s;
+	margin-top: 140px;
+}
+.col-1 .img1:hover{
+	transform: scale(1.05);
+}
+.col-2{
+	width: 50%;
+	text-align: left;
+}
+.sub-title{
+	font-size: 45px;
+}
+.sub-title::after{
+	content: '';
+	width: 40%;
+	border-radius: 50%;
+	height: 3px;
+	display: block;
+	background-color: red;
+	margin-left: -20px;
+}
+.sub-title-line{
+	margin-top: 10px;
+	font-size: 20px;
+	font-style: italic;
+	color: white;
+
+}
+
+.tab-title{
+	display: flex;
+	margin: 30px 0 40px;
+	margin-top: 60px;
+	justify-content: space-between;
+}
+.tab-link{
+	margin-right: 50px;
+	font-size: 35px;
+	font-weight: 10px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 0px;
+	text-align: center;
+	margin-left: 25px;
+}
+.tab-link::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	
+	background: red;
+	position: absolute;
+	left: 42px;
+	bottom: -8px;
+	transition: 0.8s;
+
+
+
+}
+.tab-link.active-link::after{
+	width: 50%;
+}
+.tab-contents ul li{
+	list-style: none;
+	margin: 15px 0px;
+	font-style: italic;
+	font-size: 20px;
+}
+.span2{
+	color: red;
+	font-size: 20px;
+}
+.tab-contents{
+	margin-top: 0px;
+	width: 35%;
+	padding: 0px 40px;
+	height: 300px;
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 2px 2px whitesmoke;
+	transition: 1s;
+
+	
+
+}
+.tab-contents:hover{
+	background-color: white;
+	color: black;
+	
+	transform: scale(1.09);
+	backdrop-filter: blur(5px);
+	box-shadow: 2px 2px silver;
+}
+
+
+.tab-contents ul{
+	margin-top: 30px;
+
+}
+.tab-aducation{
+	margin-top: 0px;
+	margin-left: 70px;
+	padding: 0px 40px;
+	height: 300px;
+	background-color: #333;
+	border-radius: 10px;
+	width: 35%;
+	box-shadow: 2px 2px white;
+	
+	
+
+}
+.tab-link-aducation{
+	text-align: center;
+	font-size: 35px;
+	font-weight: 10px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 5px;
+	
+	
+
+}
+.tab-link-aducation::after{
+	content: '';
+	width: 60%;
+	height: 3px;
+	
+	background: red;
+	position: absolute;
+	left: 55px;
+	bottom: -8px;
+	transition: 0.8s;
+
+}
+
+.tab-aducation ul li{
+	list-style: none;
+	margin: 18px 0px;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.tab-aducation:hover{
+	background-color: #efcc00;
+	color: White;
+	transition: 2s;
+	transform: scale(1.09) rotateX(360deg);
+	backdrop-filter: blur(5px);
+}
+
+
+/*<!----------------------------------My Services---------------------------------------------->*/
+
+
+.Services{
+	padding: 0px;
+	margin-top: -10px;
+	height: 80vh;
+
+}
+.My-Services{
+	font-size: 45px;
+	margin-left: 50px;
+
+}
+.My-Services::after{
+	content: '';
+	width: 30%;
+	border-radius: 50%;
+	height: 3px;
+	margin-left: -35px;
+	background-color: red;
+	display: block;
+}
+
+.Services-list{
+	display: flex;
+	justify-content: space-around;
+}
+.Services-1{
+	width: 25%;
+	text-align: justify;
+	background-color: #262626;
+	padding: 0px 25px;
+	padding-bottom:35px ;
+	border-radius: 7px;
+	margin-top: 50px;
+	transition: 1s;
+
+}
+.Services-2{
+	width: 25%;
+	text-align: justify;
+	background-color: #333;
+	padding: 0px 25px;
+	padding-bottom:35px ;
+	border-radius: 7px;
+	margin-top: 50px;
+	transition: 1s;
+
+}
+.Services-3{
+	width: 25%;
+	text-align: justify;
+	background-color: #333;
+	padding: 0px 25px;
+	padding-bottom:35px ;
+	border-radius: 7px;
+	margin-top: 50px;
+	transition: 1s;
+
+}
+.learn{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	padding-top: 20px;
+	transition: 2s;
+}
+.learn button{
+	padding: 8px;
+	border-radius: 9px;
+	border: none;
+	transition: 0.9s;
+}
+.learn button:hover{
+	background-color: #333;
+	border: 2px solid white;
+	transform: scale(1.1);
+	color: white;
+}
+.icon-Services{
+	margin-top: 20px;
+	font-size: 40px;
+}
+.Services-1:hover{
+	background-color: red;
+	transform: translateY(-20px);
+	cursor: pointer;
+
+}
+.Services-2:hover{
+	background-color: red;
+	transform: translateY(-20px);
+	cursor: pointer;
+
+}
+.Services-3:hover{
+	background-color: red;
+	transform: translateY(-20px);
+	cursor: pointer;
+
+}
+
+/*---------------------------Portfolio---------------------------*/
+
+.portfolio{
+	margin: 20px 0px;
+	padding: 0px;
+	height: 100vh;
+	position: relative;
+}
+.portfolio-work{
+	font-size: 45px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+.portfolio-work:after{
+	content: '';
+	width: 20%;
+	height: 3px;
+	background-color: red;
+	display: block;
+	margin-left: -14px;
+	border-radius: 50%;
+}
+
+.work-list{
+	display: flex;
+	justify-content: space-around;
+
+}
+.work-list .work{
+	width: 25%;
+
+	position: relative;
+	transition: 0.9s;
+}
+.work img{
+	width: 100%;
+	height: 90%;
+	border-radius: 20px;
+
+}
+.work:hover {
+	transform: scale(1.1);
+	
+}
+.leyar{
+	width: 100%;
+	height: 0px;
+	background: repeating-linear-gradient( rgba(0, 0, 0, 0.09),  red ) ;
+	border-radius: 20PX;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	transition: height 0.7s;
+
+}
+.work:hover .leyar{
+	height: 90%;
+
+}
+.work-1-title{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.work-1-sub-title{
+	padding:0px 20px;
+}
+
+.work a{
+	text-decoration: none;
+	color: red;
+	background-color: white;
+	padding: 17px;
+	border-radius: 50%;
+	font-size: 20px;
+	margin-top: 20px;
+	transition: 0.6s;
+
+
+}
+.work a:hover{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+.btn{
+	padding: 10px 25px;
+	border: 2px solid red;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	bottom: -40px;
+	background-color: transparent;
+	margin-left: -60px;
+	
+	transition: 0.7s;
+}
+.btn:hover{
+	background-color: red;
+
+}
+.btn a{
+	text-decoration: none;
+	color: white;
+}
+
+/*---------------------------------------------Contact Me---------------------------------------------------------*/
+
+
+#Contact{
+	margin: 100px 0px;
+	padding: 0px;
+	height: 80vh;
+	width: 100%;
+	position: relative;
+}
+.Contact-row{
+	display: flex;
+	justify-content: space-around;
+}
+.contact-col-1{
+	width: 30%;
+	position: relative;
+}
+.contact-col-2{
+	width: 30%;
+	position: relative;
+}
+.contact-line{
+	font-size: 55px;
+
+}
+.contact-line-sub{
+	padding: 15px 0px;
+}
+.contact-line-sub .icon{
+	font-size: 20px;
+	color: red;
+	
+
+}
+.contact-line-sub .icon:hover{
+	font-size: 25px;
+}
+.media{
+	margin-top: 15px;
+}
+.media a{
+	font-size: 30px ;
+	color: white;
+	margin-left: -19px;
+	padding: 25px ;
+	transition: 0.4s;
+}
+.media a:hover{
+	color: red;
+	font-size: 35px;
+}
+.btn-cv{
+	margin: 40px 30px;
+	padding: 10px 20px ;
+	border-radius:10px ;
+	border: 2px solid red;
+	cursor: pointer;
+	transition: 0.8s;
+}
+.btn-cv:hover {
+	background-color: red;
+	color: white;
+	padding: 13px 23px;
+}
+.btn-cv a{
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	transition: 0.8s;
+
+}
+.btn-cv:hover a{
+	color: white;
+	font-size: 20px;
+}
+.input{
+	width: 600px;
+	margin: 15px 0px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #333;
+	font-size: 21px;
+	color: white;
+	border: 2px solid red;
+
+}
+textarea{
+	margin: 15px 0px;
+	border-radius: 5px;
+	background-color: #333;
+	font-size: 21px;
+	color: white;
+	
+	width: 600px;
+	height: 150px;
+}
+.Contact-btn{
+	background-color: red;
+	color: white;
+	padding: 8px 28px;
+	border-radius: 10px;
+	font-size: 22px;
+	transition: 0.8s;
+
+}
+.Contact-btn:hover{
+	background-color: white;
+	border: 2px solid red;
+	cursor: pointer;
+	padding: 10px 30px;
+	color: black;
+
+}
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+	bottom: -100px;
+
+
+}
+.footer p{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 22px;
+
+}
+.footer p .fa-sharp {
+	color: red;
+	margin: 0px 2px;
+}
+
+
